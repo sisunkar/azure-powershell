@@ -23,10 +23,13 @@ payload-flattening-threshold: 2
 
 ###
 ``` yaml
-commit: 00677addbec2520127aada73ce8ec5f9788a405e
+commit: 7a8d3c583d7c9238eea971223c2ccadb18c14412
 input-file:
-  - https://github.com/Azure/azure-rest-api-specs/blob/$(commit)/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/SiteRecovery/stable/2026-02-01/service.json
-  
+  - D:/Work/azure-rest-api-specs-pr/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/SiteRecovery/preview/2026-09-30-preview/service.json
+# Local preview path used for local-only regen. Before pushing the PR, switch back to the
+# commit-pinned -pr blob URL once the preview swagger commit is published:
+#  - https://github.com/sisunkar/azure-rest-api-specs-pr/blob/$(commit)/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/SiteRecovery/preview/2026-09-30-preview/service.json
+
 output-folder: Generated
 
 namespace: Microsoft.Azure.Management.RecoveryServices.SiteRecovery
